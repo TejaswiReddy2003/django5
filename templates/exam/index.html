@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+
+<head>
+  <style>
+    body {
+      /* Set background image */
+      background-image: url("{% static 'image/6.jpeg' %}");
+      background-size: cover;
+      background-position: center;
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      height: 100vh; /* Ensure full viewport height coverage */
+    }
+
+    .container {
+      width: 100%;
+      align-items: center;
+      padding-top: 20%;
+    }
+
+    #section-jumbotron {
+      background: none; /* Remove jumbotron background */
+    }
+
+    /* You may need to adjust other styles in your CSS */
+  </style>
+</head>
+
+<body>
+  {% include "exam/navbar.html" %}
+
+  <div class="container text-center">
+    <h1 class="display-3 d-none d-sm-block"><b>ONLINE EXAMINATION SYSTEM</b></h1>
+    <p class="display-4 d-none d-sm-block">Attend your examinations online!</p>
+    <p class="lead">Sign up now to attend your online exam</p>
+
+    <a href="/student/studentsignup" class="btn btn-lg btn-light" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i>START TO SIGNUP</a>
+
+    <br><br><br>
+  </div>
+
+
+</body>
+
+</html>
